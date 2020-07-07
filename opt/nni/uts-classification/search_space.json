@@ -1,0 +1,4 @@
+{
+    "model_name":{"_type":"choice","_value":["mlp", "fcn"]},
+    "learning_rate":{"_type":"choice","_value":[0.0001, 0.001, 0.002, 0.005, 0.01]}
+}

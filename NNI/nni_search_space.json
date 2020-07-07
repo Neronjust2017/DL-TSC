@@ -1,0 +1,5 @@
+{
+    "model_name":{"_type":"choice","_value":["resnet","resnet_v2"]},
+    "learning_rate":{"_type":"choice","_value":[0.00001, 0.0001, 0.001, 0.01]},
+    "batch_size":{"_type":"choice","_value":[16, 32, 64]}
+}

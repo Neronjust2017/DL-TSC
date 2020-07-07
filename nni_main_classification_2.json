@@ -1,0 +1,29 @@
+{
+  "exp": {
+    "name": "NNI_PTDB_resnet"
+  },
+  "dataset":{
+    "type": "uts",
+    "name": "ptbdb"
+  },
+  "model":{
+    "name":"resnet_v2",
+    "learning_rate": 0.001,
+    "optimizer": "adam"
+  },
+  "trainer":{
+    "num_epochs": 100,
+    "batch_size": 16,
+    "validation_split":0.25,
+    "verbose_training": true
+  },
+  "callbacks":{
+    "checkpoint_monitor": "val_loss",
+    "checkpoint_mode": "min",
+    "checkpoint_save_best_only": true,
+    "checkpoint_save_weights_only": true,
+    "checkpoint_verbose": true,
+    "tensorboard_write_graph": true
+  },
+  "comet_api_key": "YQPqDVjchJMQyoBnieBJahbu7"
+}

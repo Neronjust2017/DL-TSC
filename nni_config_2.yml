@@ -1,0 +1,21 @@
+authorName: default
+experimentName: nni_ptbdb_resnet_v2
+trialConcurrency: 1
+maxExecDuration: 15h
+maxTrialNum: 40
+#choice: local, remote, pai
+trainingServicePlatform: local
+searchSpacePath: nni_search_space_2.json
+#choice: true, false
+useAnnotation: false
+tuner:
+  #choice: TPE, Random, Anneal, Evolution, BatchTuner, MetisTuner
+  #SMAC (SMAC should be installed through nnictl)
+  builtinTunerName: TPE
+  classArgs:
+    #choice: maximize, minimize
+    optimize_mode: maximize
+trial:
+  command: python nni_main_classification_2.py -c nni_main_classification_2.json
+  codeDir: .
+  gpuNum: 0

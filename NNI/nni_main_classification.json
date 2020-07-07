@@ -1,0 +1,29 @@
+{
+  "exp": {
+    "name": "NNI_UCI_HAR_Dataset_3"
+  },
+  "dataset":{
+    "type": "mts",
+    "name": "UCI_HAR_Dataset"
+  },
+  "model":{
+    "name":"...",
+    "learning_rate": 0,
+    "optimizer": "adam"
+  },
+  "trainer":{
+    "num_epochs": 100,
+    "batch_size": 16,
+    "validation_split":0.11,
+    "verbose_training": true
+  },
+  "callbacks":{
+    "checkpoint_monitor": "val_loss",
+    "checkpoint_mode": "min",
+    "checkpoint_save_best_only": true,
+    "checkpoint_save_weights_only": true,
+    "checkpoint_verbose": true,
+    "tensorboard_write_graph": true
+  },
+  "comet_api_key": "YQPqDVjchJMQyoBnieBJahbu7"
+}

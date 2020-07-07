@@ -1,0 +1,9 @@
+{
+    "learning_rate": {"_type":"choice","_value":[0.00001, 0.0001, 0.001, 0.01]},
+    "batch_size":{"_type":"choice","_value":[16, 32, 64, 128]},
+    "type":{"_type":"choice","_value":["inceptiontime","inceptiontime_v2"]},
+    "nb_filters":{"_type":"choice","_value":[16,32,64]},
+    "depth":{"_type":"choice","_value":[6,9,12]},
+    "kernel_size":{"_type":"choice","_value":[21,41,61,81]}
+
+}
